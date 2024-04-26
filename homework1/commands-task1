@@ -1,0 +1,15 @@
+mkdir day1
+cd day1
+touch test1 test2 test3
+echo "Hello Bash" > test1
+echo $(date) > test2
+echo $(pwd) > test3
+mkdir testDir
+cp test* testDir
+mkdir testDir/testNested
+cp test1 test2 testDir/testNested/
+rm test*
+cp testDir -r testDirCopy
+rm testDir/test1
+rm -r testDirCopy
+
