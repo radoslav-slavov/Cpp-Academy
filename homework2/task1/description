@@ -1,0 +1,4 @@
+g++ -c swap.cpp -o swap.o
+g++ -c program.cpp -o program.o
+g++ program.o swap.o -o program
+./program
